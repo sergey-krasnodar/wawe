@@ -92,7 +92,7 @@ body{
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -273,9 +273,61 @@ body{
 
 .coach__title{
   margin-bottom: 100px;
+  justify-content: flex-start;
 }
 
 .coach__text{
   margin-bottom: 30px;
   max-width: 507px;
 }
+
+.galery{
+  padding-bottom: 200px;
+}
+
+.galery__title{
+  margin-bottom: 210px;
+}
+
+.galery__btn{
+  margin-bottom: 50px;
+}
+
+.galery__btn-link{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.galery__btn-link:hover{
+  color: #00B2A0;
+}
+
+.galery__foto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galery__foto-item{
+  margin-bottom: 40px;
+}
+
+.galery__link{
+  display: block;
+  max-width: 350px;
+  text-align: center;
+  padding: 24px 90px;
+  border: 1px solid #C4C4C4;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #242121;
+  margin: 0 auto;
+}
+
+
