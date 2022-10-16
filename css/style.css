@@ -65,6 +65,24 @@ body{
   color: #242121;
 }
 
+.title{
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #01353E;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.title sub{
+  font-size: 72px;
+  line-height: 85px;
+  color: #00B2A0;
+  margin-top: 5px;
+}
+
 .header{
   min-height: 100vh;
   background-image: url(../images/bg-header.jpg);
@@ -74,7 +92,7 @@ body{
 }
 
 .container{
-  max-width: 1170px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -96,6 +114,7 @@ body{
 
 .menu__item{
   padding: 0 1px 4px;
+  border-bottom: 1px solid transparent;
 }
 
 .menu__item:hover{
@@ -142,4 +161,121 @@ body{
 
 .header__link{
   margin-bottom: 32px;
+}
+
+.about{
+  padding: 190px 0 200px;
+}
+
+.about__title{
+  margin-bottom: 100px;
+}
+
+.about__content{
+  display: grid;
+  grid-template-columns: 480px 480px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+  grid-column-gap: 120px;
+}
+
+.servise{
+  padding: 200px 0 170px;
+  background-color: #F8F8F8;
+}
+
+.servise__title{
+  margin-bottom: 100px;
+}
+
+.servise__inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.servise__item{
+  max-width: 350px;
+}
+
+.servise__items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.servise__items-title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding-left: 10px;
+  max-width: 150px;
+}
+
+.servise__info{
+  display: flex;
+}
+
+.servise__inner-wawe{
+  width: 50%;
+  flex: none;
+}
+
+.servise__info-wawe{
+  margin-bottom: 20px;
+}
+
+.servise__info-item{
+  max-width: 310px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.servise__info-item span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  z-index: 1;
+}
+
+.servise__info-item span::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-radius: -50%;
+  left: -10px;
+  top: 0;
+  height: 15px;
+  background-color: #F8F8F8;
+  z-index: -1;
+}
+
+.servise__info-text p{
+  margin-bottom: 30px;
+}
+
+.coach{
+  padding: 200px 0;
+  background-image: url(../images/serf.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center right;
+}
+
+.coach__inner{
+  margin-right: auto;
+  width: 50%;
+}
+
+.coach__title{
+  margin-bottom: 100px;
+}
+
+.coach__text{
+  margin-bottom: 30px;
+  max-width: 507px;
 }
