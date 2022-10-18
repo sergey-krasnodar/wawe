@@ -549,7 +549,7 @@ li.services__list-price{
 }
 
 .contact__title{
-  margin-bottom: 243px;
+  margin-bottom: 210px;
 }
 
 .contact__inner{
@@ -565,7 +565,7 @@ form{
   border: none;
   border-bottom: 2px solid #DADADA;
   width: calc(100% - 30px);
-  padding: 16px 0;
+  padding: 34px 0 16px;
 }
 
 .form__textarea{
@@ -574,17 +574,56 @@ form{
   padding: 55px 0 100px;
   width: calc(100% - 30px);
   resize: none;
+  margin-bottom: 73px;
 }
 
 .form__input::placeholder,
 .form__textarea::placeholder{
+  width: 260px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
   color: #00B2A0;
 }
 
+.form__button{
+  font-weight: 400;
+  font-size: 24px;
+  padding: 24px 111px;
+  border: 1px solid #C4C4C4;
+  cursor: pointer;
+}
 
+.contact__item{
+  padding: 50px;
+}
+
+.contact__text{
+  width: 327px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 65px;
+}
+
+.contact__social{
+  display: flex;
+  justify-content: center;
+}
+
+.contact__social li + li{
+  margin-left: 10px;
+}
+
+.contact__social-link{
+  font-weight: 400;
+  font-size: 24px;
+  color: #242121;
+}
+
+.contact__social-link:hover{
+  color: #00B2A0;
+}
 
 .footer{
   min-height: 200px;
