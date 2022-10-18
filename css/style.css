@@ -259,7 +259,7 @@ body{
 }
 
 .coach{
-  padding: 200px 0;
+  padding: 200px 0 350px;
   background-image: url(../images/serf.jpg);
   background-repeat: no-repeat;
   background-size: 50%;
@@ -316,6 +316,24 @@ body{
 
 .galery__foto-item{
   margin-bottom: 40px;
+  position: relative;
+}
+
+.galery__foto-link{
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(51, 51, 51, 0.7);
+  opacity: 0;
+
+}
+
+.galery__foto-link:hover{
+  opacity: 1;
 }
 
 .galery__link{
@@ -327,7 +345,253 @@ body{
   font-weight: 400;
   text-transform: uppercase;
   color: #242121;
-  margin: 0 auto;
+  margin: 0 auto 225px;
+}
+
+.blockquote{
+  padding: 80px 150px 60px;
+  background-color: #F8F8F8;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.blockquote span{
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.video{
+  margin: 200px 0;
+  min-height: 600px;
+  background-image: url(../images/bg-video.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics__inner{
+  display: flex;
+  justify-content: center;
+}
+
+.statistics__item{
+  padding: 0 50px;
+  text-align: center;
+}
+
+.statistics__item-title{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #01353E;
+  margin-bottom: 5px;
+}
+
+.blog{
+  margin-bottom: 200px;
+}
+
+.title__blog{
+  margin-bottom: 230px;
+}
+
+.blog__bg{
+  min-height: 800px;
+  background-image: linear-gradient(rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.7)), url(../images/bg-blog.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.blog__title{
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 600px;
+}
+
+.blog__text{
+  color: #fff;
+}
+
+.slick-list{
+  width: 600px;
+  margin-left: auto;
+  min-height: 800px;
+  padding-top: 335px;
+}
+
+ul.slick-dots{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 77px;
+}
+
+ul.slick-dots button{
+  padding: 0;
+  border: none;
+  font-size: 0;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul.slick-dots li + li{
+  margin-left: 15px;
+}
+
+li.slick-active button{
+  background-color: #00B2A0;
+}
+
+.team{
+  padding-bottom: 200px;
+}
+
+.team__title{
+  padding-bottom: 210px;
+}
+
+.team__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item{
+  width: 330px;
+  text-align: center;
+}
+
+.team__foto{
+  height: 450px;
+  margin-bottom: 25px;
+}
+
+.team__name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+
+.team__profession{
+  font-weight: 400;
+}
+
+.services{
+  padding: 200px 0;
+}
+
+.services__title{
+  margin-bottom: 180px;
+}
+
+.services__inner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item{
+  width: 360px;
+  min-height: 580px;
+  padding: 45px 30px;
+  position: relative;
+}
+
+.services__list li{
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+
+li.services__list-title{
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353E;
+  padding-bottom: 58px;
+}
+
+li.services__list-price{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353E;
+}
+
+.services__list-price sup{
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  right: -10px;
+  top: 10px;
+}
+
+.contact{
+  padding-bottom: 200px;
+}
+
+.contact__title{
+  margin-bottom: 243px;
+}
+
+.contact__inner{
+  margin-bottom: 200px;
+  display: flex;
+}
+
+form{
+  width: 50%;
+}
+
+.form__input{
+  border: none;
+  border-bottom: 2px solid #DADADA;
+  width: calc(100% - 30px);
+  padding: 16px 0;
+}
+
+.form__textarea{
+  border: none;
+  border-bottom: 2px solid #DADADA;
+  padding: 55px 0 100px;
+  width: calc(100% - 30px);
+  resize: none;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #00B2A0;
+}
+
+
+
+.footer{
+  min-height: 200px;
+  background-color: #00B2A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
