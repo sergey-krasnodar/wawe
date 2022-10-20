@@ -286,7 +286,7 @@ body{
 }
 
 .galery{
-  padding-bottom: 200px;
+  padding: 50px 0 200px;
 }
 
 .galery__title{
@@ -641,7 +641,21 @@ form{
   align-items: center;
 }
 
+@media (max-width: 1919px){
+  .coach{
+    padding: 150px 0 130px;
+  }
+}
+
 @media (max-width: 1200px){
+  .title{
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .title sub{
+    font-size: 51px;
+    line-height: 77px;
+  }
   .menu{
     margin-left: auto;
     margin-top: 17px;
@@ -695,15 +709,83 @@ form{
   .header__title{
     font-size: 120px;
     line-height: 160px;
-    padding-top: 125px;
+    padding-top: 90px;
   }
   .header__subtitle{
     font-size: 22px;
     line-height: 24px;
   }
+  .about{
+    padding: 130px 0 130px;
+  }
+  .about__title,
+  .servise__title,
+  .coach__title,
+  .galery__title{
+    margin-bottom: 50px;
+  }
+  .about__content{
+    display: block;
+  }
+  .about__content p{
+    margin-bottom: 20px;
+  }
+  .servise{
+    padding: 50px 0 50px;
+  }
+  .servise__inner{
+    display: block;
+  }
+  .servise__item{
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .servise__info{
+    display: block;
+    margin-bottom: 50px;
+  }
+  .servise__inner-wawe{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 350px;
+  }
+  .servise__info-text p{
+    margin-bottom: 15px;
+  }
+  .coach{
+    background: none;
+  }
+  .coach__inner{
+    width: 100%;
+  }
+  .coach__title {
+    justify-content: center;
+  }
+  .coach__text {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .galery__foto{
+    justify-content: center;
+  }
+  .galery__foto-item{
+    margin: 20px 20px;
+  }
+  .galery__btn{
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px){
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .title sub {
+    font-size: 30px;
+    line-height: 40px;
+  }
 .header__title {
     font-size: 80px;
     line-height: 120px;
@@ -712,6 +794,69 @@ form{
   .header__subtitle {
     font-size: 20px;
     line-height: 22px;
+  }
+  .about,
+  .coach,
+  servise{
+    padding: 50px 0 50px;
+  }
+  .about__title {
+    margin-bottom: 30px;
+  }
+  .servise__inner{
+    margin-bottom: 50px;
+  }
+  .servise__items-title{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .servise__info-item span{
+    font-size: 18px;
+  }
+  ul.galery__foto{
+    display: block;
+  }
+}
+
+@media (max-width: 440px){
+  .title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .title sub {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .about,
+  .coach,
+  .servise{
+    padding: 20px 0 20px;
+  }
+  .header__subtitle{
+    text-align: center;
+  }
+  .about{
+    padding: 40px 0;
+  }
+  .about__title {
+    margin-bottom: 20px;
+  }
+  .about__content p {
+    margin-bottom: 10px;
+  }
+  .servise__title{
+    margin-bottom: 30px;
+  }
+  .servise__items-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .servise__info-item {
+    max-width: 240px;
+  }
+  .servise__info-img{
+    width: 95%;
   }
 }
 
