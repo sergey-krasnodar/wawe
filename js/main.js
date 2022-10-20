@@ -1,8 +1,14 @@
 $(function(){
-  var mixer = mixitup('.galery__foto');
   
   $('.blog__slider').slick({
-  arrows: false,
+    arrows: false,
     dots: true
   });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+  
+  
+  var mixer = mixitup('.galery__foto');
 }); 

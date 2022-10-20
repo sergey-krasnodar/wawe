@@ -106,6 +106,10 @@ body{
   margin-left: 185px;
 }
 
+.menu__btn{
+  display: none;
+}
+
 .menu__list{
   align-items: center;
   display: flex;
@@ -544,6 +548,10 @@ li.services__list-price{
   top: 10px;
 }
 
+.services__map img{
+  margin: 0 auto;
+}
+
 .contact{
   padding-bottom: 200px;
 }
@@ -631,6 +639,80 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1200px){
+  .menu{
+    margin-left: auto;
+    margin-top: 17px;
+  }
+  .menu__list{
+    flex-direction: column;
+    position: absolute;
+    left: 100px;
+    right: 100px;
+    top: 0;
+    text-align: center;
+    height: auto;
+    transform: translateY(-700px);
+    transition: all 0.7s;
+  }
+  
+  .menu__list.menu__list--active{
+    transform: translateY(0px);
+  }
+  
+  .menu__item-link{
+    color: #0D302C;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .menu__item-link:hover{
+    color: #fff;
+  }
+
+  .menu__list li+li {
+    margin-left: 0;
+  }
+
+  .menu__item {
+    padding: 15px 0;
+    border: none;
+  }
+
+  .menu__item:hover {
+    border: none;
+  }
+
+  .menu__btn{
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+  .header__title{
+    font-size: 120px;
+    line-height: 160px;
+    padding-top: 125px;
+  }
+  .header__subtitle{
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px){
+.header__title {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 
