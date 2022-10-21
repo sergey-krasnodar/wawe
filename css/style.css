@@ -401,7 +401,7 @@ body{
 }
 
 .blog{
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .title__blog{
@@ -466,7 +466,7 @@ li.slick-active button{
 }
 
 .team__title{
-  padding-bottom: 210px;
+  margin-bottom: 210px;
 }
 
 .team__inner{
@@ -648,6 +648,7 @@ form{
 }
 
 @media (max-width: 1200px){
+
   .title{
     font-size: 34px;
     line-height: 40px;
@@ -716,12 +717,17 @@ form{
     line-height: 24px;
   }
   .about{
-    padding: 130px 0 130px;
+    padding: 100px 0 80px;
   }
   .about__title,
   .servise__title,
   .coach__title,
-  .galery__title{
+  .galery__title,
+  .title__blog,
+  .team__title,
+  .services__title,
+  .contact__title
+  {
     margin-bottom: 50px;
   }
   .about__content{
@@ -731,7 +737,7 @@ form{
     margin-bottom: 20px;
   }
   .servise{
-    padding: 50px 0 50px;
+    padding: 0 0 50px;
   }
   .servise__inner{
     display: block;
@@ -753,6 +759,7 @@ form{
     margin-bottom: 15px;
   }
   .coach{
+    padding: 0 0 80px;
     background: none;
   }
   .coach__inner{
@@ -765,6 +772,9 @@ form{
     margin-bottom: 20px;
     max-width: 100%;
   }
+  .galery{
+    padding: 0 0 100px;
+  }
   .galery__foto{
     justify-content: center;
   }
@@ -773,6 +783,50 @@ form{
   }
   .galery__btn{
     text-align: center;
+  }
+  .galery__link{
+    margin-bottom: 100px;
+  }
+  .blockquote{
+    padding: 0;
+  }
+  .video{
+    margin: 100px 0;
+  }
+  .blog{
+    padding-bottom: 100px;
+  }
+  .team{
+    padding-bottom: 100px;
+  }
+  .team__foto{
+    height: 320px;
+  }
+  .services{
+    padding: 0;
+  }
+  .services__item{
+    width: 270px;
+  }
+  li.services__list-title {
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 30px;
+  }
+  li.services__list-price{
+    font-size: 22px;
+    line-height: 26px;
+  }
+  li.services__list-price sup{
+    font-size: 16px;
+    line-height: 20px;
+    top: 4px;
+  }
+  .contact{
+    padding-bottom: 100px;
+  }
+  .contact__inner{
+    margin-bottom: 100px;
   }
 }
 
@@ -786,7 +840,7 @@ form{
     font-size: 30px;
     line-height: 40px;
   }
-.header__title {
+  .header__title {
     font-size: 80px;
     line-height: 120px;
   }
@@ -797,11 +851,18 @@ form{
   }
   .about,
   .coach,
-  servise{
+  .servise,
+  .galery,
+  .blog,
+  .team,
+  .services{
     padding: 50px 0 50px;
   }
-  .about__title {
-    margin-bottom: 30px;
+  .about__title,
+  .title__blog,
+  .team__title,
+  .services__title {
+    margin-bottom: 50px;
   }
   .servise__inner{
     margin-bottom: 50px;
@@ -813,15 +874,71 @@ form{
   .servise__info-item span{
     font-size: 18px;
   }
-  ul.galery__foto{
-    display: block;
+  .galery__btn-link{
+    font-size: 18px;
   }
-}
+  .galery__foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .galery__link{
+    margin: 0 auto 100px;
+  }
+  .blockquote{
+    font-size: 26px;
+    line-height: 28px;
+    padding: 0;
+  }
+  .blockquote span{
+    text-align: center;
+  }
+  .video{
+    margin: 100px 0;
+  }
+  .statistics__inner{
+    flex-wrap: wrap;
+  }
+  .statistics__item {
+    padding: 25px 0px;
+    text-align: center;
+    width: 50%;
+  }
+  .statistics__item-title{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .blog{
+    margin-bottom: 0;
+  }
+  .blog__slider{
+    min-height: 500px;
+  }
+  .blog__title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .slick-list{
+    width: 300px;
+    height: auto;
+  }
+  .team__inner{
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__item{
+    margin-bottom: 30px;
+  }
+  .team__foto{
+    height: 450px;
+    margin-bottom: 10px;
+  }
 
 @media (max-width: 440px){
   .title {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
   }
 
   .title sub {
@@ -830,7 +947,9 @@ form{
   }
   .about,
   .coach,
-  .servise{
+  .servise,
+  .galery,
+  .blog{
     padding: 20px 0 20px;
   }
   .header__subtitle{
@@ -857,6 +976,17 @@ form{
   }
   .servise__info-img{
     width: 95%;
+  }
+  .galery__btn-link{
+    font-size: 14px;
+  }
+  .blockquote span{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .video{
+    min-height: 280px;
+    margin: 50px 0;
   }
 }
 
