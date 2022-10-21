@@ -860,8 +860,8 @@ form{
   }
   .about__title,
   .title__blog,
-  .team__title,
-  .services__title {
+  .team__title
+   {
     margin-bottom: 50px;
   }
   .servise__inner{
@@ -911,16 +911,16 @@ form{
   .blog{
     margin-bottom: 0;
   }
-  .blog__slider{
-    min-height: 500px;
-  }
   .blog__title{
     font-size: 30px;
     line-height: 40px;
+    width: 345px;
+  }
+  .blog__text{
+    width: 345px;
   }
   .slick-list{
-    width: 300px;
-    height: auto;
+    height: 690px;
   }
   .team__inner{
     flex-direction: column;
@@ -932,6 +932,46 @@ form{
   .team__foto{
     height: 450px;
     margin-bottom: 10px;
+  }
+  .services__inner {
+    display: block;
+  }
+  .services__item{
+    width: 100%;
+  }
+  .services__title{
+    margin-bottom: 0;
+  }
+  .services__item {
+    min-height: auto;
+    padding: 25px 30px;
+    padding: 25px 30px;
+    position: relative;
+  }
+  li.services__list-price{
+    position: relative;
+    display: inline-block;
+    left: 47%;
+  }
+  li.services__list-price sup{
+    right: -10px;
+  }
+  .services__list li{
+    text-align: center;
+  }
+  .contact__inner{
+    flex-direction: column-reverse;
+  }
+  .form{
+    width: 100%;
+  }
+  .form__input,
+  .form__textarea {
+    width: 100%;
+  }
+  .form__button{
+    display: block;
+    margin: auto;
   }
 
 @media (max-width: 440px){
@@ -987,6 +1027,31 @@ form{
   .video{
     min-height: 280px;
     margin: 50px 0;
+  }
+  .blog__title {
+    font-size: 20px;
+    line-height: 26px;
+    width: 305px;
+  }
+  .blog__text{
+    width: 280px;
+  }
+  .form__button{
+    padding: 24px 90px;
+  }
+  .contact__item{
+    padding: 30px;
+  }
+  .contact__text{
+    width: 270px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contact__social-link{
+    font-size: 18px;
+  }
+  .footer{
+    min-height: 100px;
   }
 }
 
