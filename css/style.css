@@ -620,7 +620,7 @@ form{
 }
 
 .contact__social li + li{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .contact__social-link{
@@ -671,6 +671,8 @@ form{
     height: auto;
     transform: translateY(-700px);
     transition: all 0.7s;
+    position: fixed;
+    z-index: 20;
   }
   
   .menu__list.menu__list--active{
@@ -701,11 +703,14 @@ form{
   }
 
   .menu__btn{
+    position: fixed;
+    right: 20px;
     display: block;
     border: none;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+    z-index: 20;
   }
   .header__title{
     font-size: 120px;
@@ -982,8 +987,8 @@ form{
   }
 
   .title sub {
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 24px;
+    line-height: 32px;
   }
   .about,
   .coach,
