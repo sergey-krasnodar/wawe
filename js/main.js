@@ -12,10 +12,27 @@ $(function(){
     dots: true
   });
 
-  $('.menu__btn, .menu a').on('click', function(){
-    $('.menu__list').toggleClass('menu__list--active');
-  });
-  
-  
   var mixer = mixitup('.galery__foto');
-}); 
+});
+
+// ========================= Бургер-меню ==========================
+
+const menuList = document.querySelector('.menu__list'); 
+const btnBurger = document.querySelector('.menu-burger'); 
+const menuItem = document.querySelectorAll('.menu__item'); 
+
+btnBurger.addEventListener('click', function () {
+  menuList.classList.toggle('menu__list--active');
+  if (menuList.classList.contains('menu__list--active')) {
+    btnBurger.classList.add('open');
+  } else {
+    btnBurger.classList.remove('open');
+  }
+});
+
+menuItem.forEach(link => {
+  link.addEventListener('click', () => {
+    btnBurger.classList.remove('open');
+    menuList.classList.remove('menu__list--active');
+  })
+});

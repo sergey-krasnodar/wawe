@@ -106,7 +106,7 @@ body{
   margin-left: 185px;
 }
 
-.menu__btn{
+.menu-burger{
   display: none;
 }
 
@@ -713,6 +713,13 @@ form{
   }
 }
 
+@media (max-width: 1372px){
+  .slick-prev,
+  .slick-next {
+    
+  }
+}
+
 @media (max-width: 1200px){
 
   .title{
@@ -739,20 +746,91 @@ form{
     transition: all 0.7s;
     position: fixed;
     z-index: 20;
+    background-color: #fff;
   }
   
   .menu__list.menu__list--active{
     transform: translateY(0px);
   }
+
+    .menu-burger {
+      display: block;
+      width: 40px;
+      height: 24px;
+      position: fixed;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+      right: 15px;
+      z-index: 15;
+    }
+  
+    .menu-burger span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #00B2A0;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+    }
+  
+    .menu-burger span:nth-child(1) {
+      top: -2px;
+    }
+  
+    .menu-burger span:nth-child(2),
+    .menu-burger span:nth-child(3) {
+      top: 6px;
+    }
+  
+    .menu-burger span:nth-child(4) {
+      top: 14px;
+    }
+  
+    .menu-burger span:nth-child(5) {
+      top: 22px;
+    }
+  
+    .menu-burger.open span:nth-child(1) {
+      top: 6px;
+      width: 0%;
+      left: 50%;
+    }
+  
+    .menu-burger.open span:nth-child(2) {
+      transform: translateX(5px) translateY(5px) rotate(45deg);
+      width: 75%;
+    }
+  
+    .menu-burger.open span:nth-child(3) {
+      transform: translateX(5px) translateY(5px) rotate(-45deg);
+      width: 75%;
+    }
+  
+    .menu-burger.open span:nth-child(4) {
+      top: 6px;
+      width: 0%;
+      left: 50%;
+    }
+  
+    .menu-burger.open span:nth-child(5) {
+      top: 6px;
+      width: 0%;
+      left: 50%;
+    }
   
   .menu__item-link{
     color: #0D302C;
     font-weight: 700;
     font-size: 20px;
     line-height: 22px;
+    transition: .5s;
   }
   .menu__item-link:hover{
-    color: #fff;
+    color: #00B2A0;
   }
 
   .menu__list li+li {
