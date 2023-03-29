@@ -83,6 +83,61 @@ body{
   margin-top: 5px;
 }
 
+.about__title,
+.servise__title,
+.coach__title,
+.galery__title,
+.title__blog,
+.team__title,
+.services__title,
+.contact__title,
+.servise__info,
+.coach__text,
+.blockquote{
+  transition: 2s;
+  opacity: 0;
+  transform: translateX(-150px);
+}
+
+.anime.about__title.active,
+.anime.servise__title.active,
+.anime.coach__title.active,
+.anime.galery__title.active,
+.anime.title__blog.active,
+.anime.team__title.active,
+.anime.services__title.active,
+.anime.servise__info.active,
+.anime.coach__text.active,
+.anime.blockquote.active,
+.anime.contact__title.active{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about__content,
+.servise__item{
+  transition: 2s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+.anime.about__content.active,
+.anime.servise__item.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.servise__info-text{
+  transition: 2s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+.anime.servise__info-text.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .header{
   overflow: hidden;
   min-height: 100vh;
@@ -430,6 +485,20 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 2s;
+  overflow: hidden;
+}
+
+.video:hover{
+  transform: scale(1.1);
+}
+
+.video__play{
+  transition: 1s;
+}
+
+.video__play:hover{
+  transform: scale(1.3);
 }
 
 .statistics__inner{
