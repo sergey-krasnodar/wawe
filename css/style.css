@@ -84,11 +84,13 @@ body{
 }
 
 .header{
+  overflow: hidden;
   min-height: 100vh;
   background-image: url(../images/bg-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
+  background-attachment: fixed;
 }
 
 .container{
@@ -130,12 +132,16 @@ body{
   font-size: 24px;
   line-height: 28px;
   color: #fff;
-  transition: .5s;
+  transition: .3s;
 }
 
 .menu__item-link:hover{
-  border-bottom: 1px solid #00B2A0;
-  color: #00B2A0;
+  text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #fff,
+    0 0 82px #fff;
 }
 
 .header__content{
@@ -144,20 +150,41 @@ body{
   align-items: center;
   justify-content: space-between;
   min-height: calc(100vh - 130px);
+  position: relative;
 }
 
-.header__title{
+.header__title-1,
+.header__title-2{
+  position: absolute;
+  margin-top: 100px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 200px;
   line-height: 235px;
   letter-spacing: 0.6px;
-  color: #0D302C;
   text-transform: uppercase;
-  margin-top: 110px;
+} 
+
+.header__title-1{
+  color: transparent;
+  -webkit-text-stroke: 5px #01353E;
+}
+.header__title-2{
+  color: #01353E;
+  animation: wave 8s ease-in-out infinite;
+}
+
+@keyframes wave{
+  0%, 100%{
+    clip-path: polygon(1% 47%, 5% 40%, 10% 32%, 15% 25%, 21% 25%, 26% 32%, 29% 39%, 32% 47%, 35% 55%, 44% 58%, 51% 54%, 57% 47%, 59% 39%, 63% 30%, 67% 23%, 75% 22%, 82% 28%, 86% 36%, 91% 42%, 96% 49%, 100% 50%, 100% 100%, 1% 100%);
+  }
+  50%{
+    clip-path: polygon(1% 47%, 6% 55%, 12% 60%, 17% 68%, 25% 69%, 27% 61%, 29% 53%, 32% 44%, 35% 35%, 39% 27%, 46% 23%, 51% 30%, 55% 40%, 60% 50%, 66% 58%, 72% 65%, 80% 66%, 86% 62%, 91% 56%, 96% 49%, 100% 42%, 100% 100%, 1% 100%);
+  }
 }
 
 .header__subtitle{
+  margin-top: 330px;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -166,24 +193,18 @@ body{
 }
 
 .header__link{
-  margin-bottom: 32px;
-  animation-name: header__link;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  margin-bottom: 38px;
+  overflow: hidden;
+  animation: header__link 8s infinite;
 }
 
 @keyframes header__link {
-  0% {
+  0%, 100% {
     transform: translate(0, 0px);
   }
 
   50% {
-    transform: translate(0, 20px);
-  }
-
-  100% {
-    transform: translate(0, -0px);
+    transform: translate(0, 30px);
   }
 }
 
